@@ -1,0 +1,140 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : riscv_lite_inst_size32_Numbit64_AddressMem6
+Version: O-2018.06-SP4
+Date   : Tue Feb 15 21:06:00 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DataPath/ID_EX_MUX/DATA_OUT_reg
+              (rising edge-triggered flip-flop clocked by myclock)
+  Endpoint: DataPath/EX_MEM_ALU_RES/DATA_OUT_reg[57]
+            (rising edge-triggered flip-flop clocked by myclock)
+  Path Group: myclock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_lite_inst_size32_Numbit64_AddressMem6
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock myclock (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DataPath/ID_EX_MUX/DATA_OUT_reg/CK (DFF_X1)             0.00       0.00 r
+  DataPath/ID_EX_MUX/DATA_OUT_reg/Q (DFF_X1)              0.09       0.09 r
+  DataPath/ID_EX_MUX/DATA_OUT (FF_0)                      0.00       0.09 r
+  DataPath/MUX_IMM_RS2/selector (mux_gen_N64_2)           0.00       0.09 r
+  DataPath/MUX_IMM_RS2/U35/Z (BUF_X1)                     0.04       0.13 r
+  DataPath/MUX_IMM_RS2/U23/Z (BUF_X1)                     0.04       0.17 r
+  DataPath/MUX_IMM_RS2/U4/Z (BUF_X1)                      0.04       0.21 r
+  DataPath/MUX_IMM_RS2/U2/ZN (INV_X1)                     0.06       0.27 f
+  DataPath/MUX_IMM_RS2/U32/ZN (AOI22_X1)                  0.07       0.34 r
+  DataPath/MUX_IMM_RS2/U31/ZN (INV_X1)                    0.04       0.38 f
+  DataPath/MUX_IMM_RS2/DATA_OUT[0] (mux_gen_N64_2)        0.00       0.38 f
+  DataPath/ALU_i/Input2[0] (ALU)                          0.00       0.38 f
+  DataPath/ALU_i/r312/B[0] (ALU_DW01_addsub_0)            0.00       0.38 f
+  DataPath/ALU_i/r312/U64/Z (XOR2_X1)                     0.08       0.46 f
+  DataPath/ALU_i/r312/U1_0/CO (FA_X1)                     0.11       0.57 f
+  DataPath/ALU_i/r312/U1_1/CO (FA_X1)                     0.09       0.66 f
+  DataPath/ALU_i/r312/U1_2/CO (FA_X1)                     0.09       0.75 f
+  DataPath/ALU_i/r312/U1_3/CO (FA_X1)                     0.09       0.84 f
+  DataPath/ALU_i/r312/U1_4/CO (FA_X1)                     0.09       0.93 f
+  DataPath/ALU_i/r312/U1_5/CO (FA_X1)                     0.09       1.02 f
+  DataPath/ALU_i/r312/U1_6/CO (FA_X1)                     0.09       1.11 f
+  DataPath/ALU_i/r312/U1_7/CO (FA_X1)                     0.09       1.20 f
+  DataPath/ALU_i/r312/U1_8/CO (FA_X1)                     0.09       1.29 f
+  DataPath/ALU_i/r312/U1_9/CO (FA_X1)                     0.09       1.38 f
+  DataPath/ALU_i/r312/U1_10/CO (FA_X1)                    0.09       1.47 f
+  DataPath/ALU_i/r312/U1_11/CO (FA_X1)                    0.09       1.57 f
+  DataPath/ALU_i/r312/U1_12/CO (FA_X1)                    0.09       1.66 f
+  DataPath/ALU_i/r312/U1_13/CO (FA_X1)                    0.09       1.75 f
+  DataPath/ALU_i/r312/U1_14/CO (FA_X1)                    0.09       1.84 f
+  DataPath/ALU_i/r312/U1_15/CO (FA_X1)                    0.09       1.93 f
+  DataPath/ALU_i/r312/U1_16/CO (FA_X1)                    0.09       2.02 f
+  DataPath/ALU_i/r312/U1_17/CO (FA_X1)                    0.09       2.11 f
+  DataPath/ALU_i/r312/U1_18/CO (FA_X1)                    0.09       2.20 f
+  DataPath/ALU_i/r312/U1_19/CO (FA_X1)                    0.09       2.29 f
+  DataPath/ALU_i/r312/U1_20/CO (FA_X1)                    0.09       2.38 f
+  DataPath/ALU_i/r312/U1_21/CO (FA_X1)                    0.09       2.47 f
+  DataPath/ALU_i/r312/U1_22/CO (FA_X1)                    0.09       2.56 f
+  DataPath/ALU_i/r312/U1_23/CO (FA_X1)                    0.09       2.65 f
+  DataPath/ALU_i/r312/U1_24/CO (FA_X1)                    0.09       2.74 f
+  DataPath/ALU_i/r312/U1_25/CO (FA_X1)                    0.09       2.83 f
+  DataPath/ALU_i/r312/U1_26/CO (FA_X1)                    0.09       2.92 f
+  DataPath/ALU_i/r312/U1_27/CO (FA_X1)                    0.09       3.02 f
+  DataPath/ALU_i/r312/U1_28/CO (FA_X1)                    0.09       3.11 f
+  DataPath/ALU_i/r312/U1_29/CO (FA_X1)                    0.09       3.20 f
+  DataPath/ALU_i/r312/U1_30/CO (FA_X1)                    0.09       3.29 f
+  DataPath/ALU_i/r312/U1_31/CO (FA_X1)                    0.09       3.38 f
+  DataPath/ALU_i/r312/U1_32/CO (FA_X1)                    0.09       3.47 f
+  DataPath/ALU_i/r312/U1_33/CO (FA_X1)                    0.09       3.56 f
+  DataPath/ALU_i/r312/U1_34/CO (FA_X1)                    0.09       3.65 f
+  DataPath/ALU_i/r312/U1_35/CO (FA_X1)                    0.09       3.74 f
+  DataPath/ALU_i/r312/U1_36/CO (FA_X1)                    0.09       3.83 f
+  DataPath/ALU_i/r312/U1_37/CO (FA_X1)                    0.09       3.92 f
+  DataPath/ALU_i/r312/U1_38/CO (FA_X1)                    0.09       4.01 f
+  DataPath/ALU_i/r312/U1_39/CO (FA_X1)                    0.09       4.10 f
+  DataPath/ALU_i/r312/U1_40/CO (FA_X1)                    0.09       4.19 f
+  DataPath/ALU_i/r312/U1_41/CO (FA_X1)                    0.09       4.28 f
+  DataPath/ALU_i/r312/U1_42/CO (FA_X1)                    0.09       4.38 f
+  DataPath/ALU_i/r312/U1_43/CO (FA_X1)                    0.09       4.47 f
+  DataPath/ALU_i/r312/U1_44/CO (FA_X1)                    0.09       4.56 f
+  DataPath/ALU_i/r312/U1_45/CO (FA_X1)                    0.09       4.65 f
+  DataPath/ALU_i/r312/U1_46/CO (FA_X1)                    0.09       4.74 f
+  DataPath/ALU_i/r312/U1_47/CO (FA_X1)                    0.09       4.83 f
+  DataPath/ALU_i/r312/U1_48/CO (FA_X1)                    0.09       4.92 f
+  DataPath/ALU_i/r312/U1_49/CO (FA_X1)                    0.09       5.01 f
+  DataPath/ALU_i/r312/U1_50/CO (FA_X1)                    0.09       5.10 f
+  DataPath/ALU_i/r312/U1_51/CO (FA_X1)                    0.09       5.19 f
+  DataPath/ALU_i/r312/U1_52/CO (FA_X1)                    0.09       5.28 f
+  DataPath/ALU_i/r312/U1_53/CO (FA_X1)                    0.09       5.37 f
+  DataPath/ALU_i/r312/U1_54/CO (FA_X1)                    0.09       5.46 f
+  DataPath/ALU_i/r312/U1_55/CO (FA_X1)                    0.09       5.55 f
+  DataPath/ALU_i/r312/U1_56/CO (FA_X1)                    0.09       5.64 f
+  DataPath/ALU_i/r312/U1_57/CO (FA_X1)                    0.09       5.73 f
+  DataPath/ALU_i/r312/U1_58/CO (FA_X1)                    0.09       5.83 f
+  DataPath/ALU_i/r312/U1_59/CO (FA_X1)                    0.09       5.92 f
+  DataPath/ALU_i/r312/U1_60/CO (FA_X1)                    0.09       6.01 f
+  DataPath/ALU_i/r312/U1_61/CO (FA_X1)                    0.09       6.10 f
+  DataPath/ALU_i/r312/U1_62/CO (FA_X1)                    0.09       6.19 f
+  DataPath/ALU_i/r312/U1_63/S (FA_X1)                     0.11       6.30 f
+  DataPath/ALU_i/r312/SUM[63] (ALU_DW01_addsub_0)         0.00       6.30 f
+  DataPath/ALU_i/U779/ZN (AND4_X1)                        0.05       6.35 f
+  DataPath/ALU_i/U778/ZN (AOI21_X1)                       0.12       6.47 r
+  DataPath/ALU_i/U416/ZN (OAI21_X1)                       0.07       6.54 f
+  DataPath/ALU_i/U150/ZN (INV_X1)                         0.05       6.59 r
+  DataPath/ALU_i/U92/ZN (OAI21_X2)                        0.08       6.68 f
+  DataPath/ALU_i/U94/ZN (INV_X1)                          0.06       6.73 r
+  DataPath/ALU_i/U93/ZN (OAI21_X2)                        0.07       6.80 f
+  DataPath/ALU_i/U126/ZN (AOI221_X1)                      0.11       6.91 r
+  DataPath/ALU_i/U864/ZN (NAND2_X1)                       0.03       6.94 f
+  DataPath/ALU_i/Output[57] (ALU)                         0.00       6.94 f
+  DataPath/EX_MEM_ALU_RES/DATA_IN[57] (reg_N64_3)         0.00       6.94 f
+  DataPath/EX_MEM_ALU_RES/U95/ZN (INV_X1)                 0.03       6.97 r
+  DataPath/EX_MEM_ALU_RES/U94/ZN (OAI22_X1)               0.03       7.00 f
+  DataPath/EX_MEM_ALU_RES/DATA_OUT_reg[57]/D (DFF_X1)     0.01       7.01 f
+  data arrival time                                                  7.01
+
+  clock myclock (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.07       9.93
+  DataPath/EX_MEM_ALU_RES/DATA_OUT_reg[57]/CK (DFF_X1)
+                                                          0.00       9.93 r
+  library setup time                                     -0.04       9.89
+  data required time                                                 9.89
+  --------------------------------------------------------------------------
+  data required time                                                 9.89
+  data arrival time                                                 -7.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.88
+
+
+1
